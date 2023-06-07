@@ -1,1 +1,26 @@
-application which puts downloaded files into aws rds postgres database
+Data Upload and Ingestion in PostgreSQL Database using Google Colab
+
+This project outlines a process for uploading CSV data via Google Colab, processing it with pandas, and ingesting it into a PostgreSQL database.
+Tools/Modules Used
+
+    Python: Core programming language for this project.
+    Google Colab: An interactive cloud-based Python notebook environment used for development and file uploading.
+    pandas: Powerful data manipulation and analysis library. Used for data cleaning and transformation.
+    psycopg2 and sqlalchemy: Python libraries used to interact with PostgreSQL databases. They were used to establish a database connection and execute SQL commands.
+    config: A custom module for storing sensitive information such as database credentials.
+
+Steps Involved
+
+    Data Upload: Upload the CSV file using Google Colab's file upload feature.
+
+    Data Transformation: Load the CSV data into a pandas DataFrame and clean the column names by replacing spaces with underscores.
+
+    Database Connection: Set up a PostgreSQL database engine using the credentials stored in the config module.
+
+    Data Ingestion: Write the DataFrame to a specified table in the PostgreSQL database.
+
+How to Run
+
+This project is designed to be run in a Google Colab notebook. Run each cell in order, ensuring to upload your desired CSV file when prompted. The script will automatically load the file, clean the column names, and insert the data into the designated PostgreSQL table.
+
+Note: Ensure that you've set up your config module to include your specific PostgreSQL credentials.
